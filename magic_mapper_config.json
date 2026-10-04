@@ -2,7 +2,7 @@
   "magic_mapper_settings": {
     "block_mouse": false,
     "exclusive_mode": true,
-    "ir_input_enabled": false,
+    "ir_input_enabled": true,
     "ir_exclusive_mode": true
   },
   "yellow": {
@@ -13,9 +13,11 @@
     }
   },
   "blue": {
-    "function": "toggle_eye_comfort",
+    "function": "send_ir_command",
     "inputs": {
-      "notifications": true
+      "tv_input": "optical",
+      "keycode": "IR_KEY_POWER",
+      "device_type": "audio"
     }
   },
   "red": {
